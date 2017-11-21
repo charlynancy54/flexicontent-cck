@@ -330,7 +330,7 @@ jQuery(function() {
 			{
 				// Force height to fit images
 				var height = 0;
-				$rgGallery.find('div.rg-image').each(function() {
+				$rgGallery.find('div.rg-image img').each(function() {
 					height = jQuery(this).height() > height ? jQuery(this).height() : height;
 				});
 				$rgGallery.find('div.rg-image').css('height', height);
