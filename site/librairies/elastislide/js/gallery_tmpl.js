@@ -345,7 +345,7 @@ jQuery(function() {
 						easing : easing_name,
 						complete : function() {
 							$active.hide().css({opacity : 1});
-							$active.css('z-index', 1).show().removeClass('active'); //reset the z-index and unhide the old active image
+							$active.css('z-index', 1).removeClass('active'); //reset the z-index and unhide the old active image
 							$image.css('z-index', 3).addClass('active'); // Make the newly activated image the top one
 						}
 					})
