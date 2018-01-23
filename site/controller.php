@@ -1161,7 +1161,8 @@ class FlexicontentController extends JControllerLegacy
 			}
 			
 			// Add any existing URL variables (=submitted via GET),  ... we only need variable names, (values are ignored)
-			foreach($_GET as $_varname => $_ignore) $safeurlparams[$_varname] = 'STRING';
+			$getVars = $this->input->getArray();
+			foreach($getVars as $_varname => $_ignore) $safeurlparams[$_varname] = 'STRING';
 		}
 		
 		
